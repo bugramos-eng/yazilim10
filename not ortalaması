@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("birinci notu giriniz");
+            int not1=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("ikinci notu giriniz");
+            int not2=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("ucuncu notu giriniz");
+            int not3=Convert.ToInt32(Console.ReadLine());
+            int toplam= not1+ not2+ not3;
+            Console.WriteLine("sonuç" + toplam);
+            int ortalama = toplam / 3;
+            Console.WriteLine("ortalama" + ortalama);
+            if (ortalama >= 50)
+            {
+                Console.WriteLine("geçti");
+            }
+            else
+            {
+                Console.WriteLine("kaldı");
+            }
+            Console.ReadKey();
+
+
+        }
+    }
+}
